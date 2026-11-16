@@ -32,5 +32,6 @@ def heap_sort(lista):
     return lista
 
 
-resultado = heap_sort([9, 4, 7, 2, 6, 1])
-print(resultado)
+if __name__ == "__main__":
+    resultado = heap_sort([9, 4, 7, 2, 6, 1])
+    print(resultado)

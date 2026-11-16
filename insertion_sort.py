@@ -17,5 +17,6 @@ def insertion_sort(lista):
     return lista
 
 
-resultado = insertion_sort([5, 2, 4, 1, 3])
-print(resultado)
+if __name__ == "__main__":
+    resultado = insertion_sort([5, 2, 4, 1, 3])
+    print(resultado)

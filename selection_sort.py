@@ -16,5 +16,6 @@ def selection_sort(lista):
     return lista
 
 
-resultado = selection_sort([15, 8, 23, 4, 12, 7])
-print(resultado)
+if __name__ == "__main__":
+    resultado = selection_sort([15, 8, 23, 4, 12, 7])
+    print(resultado)

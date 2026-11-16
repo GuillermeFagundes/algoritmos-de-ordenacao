@@ -12,5 +12,6 @@ def bubble_sort(lista):
 
     return lista
 
-resultado = bubble_sort([9, 4, 7, 2, 6, 1])
-print(resultado)
+if __name__ == "__main__":
+    resultado = bubble_sort([9, 4, 7, 2, 6, 1])
+    print(resultado)
