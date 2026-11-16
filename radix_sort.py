@@ -1,6 +1,3 @@
-import random
-import time
-
 # Vantagem: ordena inteiros por digitos em O(d * (n + 10)).
 # Desvantagem: precisa de memoria auxiliar O(n) e depende do numero de digitos.
 # O deslocamento permite ordenar tambem numeros inteiros negativos.
@@ -41,20 +38,5 @@ def radix_sort(lista):
     return lista
 
 
-if __name__ == "__main__":
-    # Gera exatamente 100.000 numeros aleatorios para o teste.
-    gerador = random.Random(42)
-    lista = [gerador.randint(-50000, 50000) for _ in range(100000)]
-
-    # Mantem um resultado de referencia para conferir a ordenacao.
-    esperado = sorted(lista)
-
-    inicio = time.perf_counter()
-    resultado = radix_sort(lista)
-    fim = time.perf_counter()
-
-    print("Algoritmo: radix_sort")
-    print("Quantidade de elementos:", len(resultado))
-    print("Ordenacao correta:", resultado == esperado)
-    print("Primeiros 10 elementos:", resultado[:10])
-    print("Tempo de execucao:", round(fim - inicio, 4), "segundos")
+resultado = radix_sort([9, 4, 7, 2, 6, 1])
+print(resultado)
